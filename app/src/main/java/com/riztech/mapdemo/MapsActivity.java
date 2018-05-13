@@ -151,6 +151,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 }
             }
         });
+        googleFusedLocationSetUp();
     }
 
 
@@ -259,7 +260,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 mCurrentLocation = locationResult.getLastLocation();
                 mLastUpdateTime = DateFormat.getTimeInstance().format(new Date());
 
-//                drawPolylineGoogleMap(mCurrentLocation);
+                drawPolylineGoogleMap(mCurrentLocation);
             }
         };
     }
